@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>LastFM Wallpaper Generator</title>
+    <script type="text/javascript" src="js/generateWallpaper.js"></script>
+    <script type="text/javascript" src="js/jquery-2.2.1.js"></script>
+    <link rel="stylesheet" href = "css/index-style.css" type="text/css"/>
+    <link rel="shortcut icon"  type='image/x-icon' href="favicon.ico"/>
+</head>
+<body>
+    <p style="text-align:center;font-size:22px;"><i>LastFM Wallpaper Generator</i></p>
+    <div id="form">
+        <form action="javascript:getData()">
+        Username:<br>
+            <input type="text" name="user" value="r4ffz"><br>
+        Period:<br>
+            <select name="period" style="width:172px">
+              <option value="7day">Week</option>
+              <option value="1month">Month</option>
+              <option value="3month">3 Months</option>
+              <option value="6month">6 Months</option>
+              <option value="12month">12 Months</option>
+              <option value="overall" selected="true">Overall</option>
+            </select><br>
+       Resolution:<br>
+           <select name="resolution" style="width:172px">
+               <option>768x1024</option>
+               <option>720x1280</option>
+               <option>1024x768</option>
+               <option>1152x864</option>
+               <option>1136x640</option>
+               <option>1280x960</option>
+               <option>1280x1024</option>
+               <option>1400x1050</option>
+               <option>1600x1200</option>
+               <option>1920x1440</option>
+               <option>1280x800</option>
+               <option selected="true">1366x768</option>
+               <option>1440x900</option>
+               <option>1600x900</option>
+               <option>1680x1050</option>
+               <option>1920x1080</option>
+               <option>1920x1200</option>
+               <option>2560x1440</option>
+               <option>2560x1600</option>
+           </select><br>
+        Album Image Size:<br>
+           <select name="imgSize" style="width:172px">
+               <option>120</option>
+               <option>150</option>
+               <option selected="true">174</option>
+               <option>200</option>
+               <option>250</option>
+               <option>300</option>
+           </select><br><br>
+       <input type="submit" value="Generate Wallpaper">
+    </form>
+    </div>
+    <p style="text-align:center;font-size:12px">by: Rafael Gaspar</p>
+</body>
+</html>
